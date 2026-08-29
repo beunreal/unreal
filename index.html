@@ -1,77 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>UNREAL — BE UNREAL.</title>
 
-    <meta name="description"
-          content="UNREAL — independent Ghanaian streetwear. Be Unreal.">
+    <meta
+        name="description"
+        content="UNREAL — independent Ghanaian streetwear. Be Unreal."
+    >
 
-    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
 
+
 <body>
+
 
 <!-- ================= HEADER ================= -->
 
 <header class="header">
 
-    <a href="#" class="logo">UNREAL</a>
+    <a href="#" class="logo">
+        UNREAL
+    </a>
+
 
     <nav class="nav">
-        <a href="#shop">SHOP</a>
-        <a href="#about">ABOUT</a>
-        <a href="#contact">CONTACT</a>
 
-        <button onclick="openCart()" class="cart-button">
-            CART (<span id="cart-count">0</span>)
+        <a href="#shop">
+            SHOP
+        </a>
+
+        <a href="#about">
+            ABOUT
+        </a>
+
+        <a href="#contact">
+            CONTACT
+        </a>
+
+
+        <button
+            onclick="openCart()"
+            class="cart-button"
+        >
+
+            CART
+            (<span id="cart-count">0</span>)
+
         </button>
+
     </nav>
 
-    <button class="mobile-menu" onclick="toggleMenu()">
+
+    <button
+        class="mobile-menu"
+        onclick="toggleMenu()"
+    >
+
         ☰
+
     </button>
 
 </header>
+
 
 
 <!-- ================= HERO ================= -->
 
 <section class="hero">
 
+
     <div class="hero-text">
 
+
         <p class="small-title">
+
             COLLECTION 001
+
         </p>
+
 
         <h1>
+
             BE<br>
             UNREAL.
+
         </h1>
 
+
         <p class="hero-description">
-            Step into a world where style breaks every rule. Bold designs. Sharp details. Confidence that can’t be copied.
-This isn’t just clothing—this is UNREAL.
+
+            Streetwear for people who refuse
+            to blend in.
+            Bold. Simple. Unapologetic.
 
         </p>
 
-        <a href="#shop" class="main-button">
+
+        <a
+            href="#shop"
+            class="main-button"
+        >
+
             SHOP THE DROP →
+
         </a>
 
+
     </div>
+
 
 
     <div class="hero-image">
 
         <div class="shirt">
-            <span>UNREAL</span>
+
+            <span>
+                UNREAL
+            </span>
+
         </div>
 
     </div>
+
 
 </section>
 
@@ -79,26 +143,42 @@ This isn’t just clothing—this is UNREAL.
 
 <!-- ================= SHOP ================= -->
 
-<section class="shop section" id="shop">
+<section
+    class="shop section"
+    id="shop"
+>
+
 
     <div class="section-heading">
 
+
         <h2>
+
             THE DROP
+
         </h2>
 
+
         <p>
+
             COLLECTION 001
+
         </p>
 
-    </div>
-
-
-    <div class="products" id="products-container">
-
-        <!-- Products are loaded by JavaScript -->
 
     </div>
+
+
+
+    <div
+        class="products"
+        id="products-container"
+    >
+
+        <!-- Products loaded by JavaScript -->
+
+    </div>
+
 
 </section>
 
@@ -108,9 +188,14 @@ This isn’t just clothing—this is UNREAL.
 
 <section class="statement">
 
+
     <h2>
-       WEAR THE IMPOSSIBLE
+
+        YOU DON'T NEED TO FIT IN
+        TO STAND OUT.
+
     </h2>
+
 
 </section>
 
@@ -118,30 +203,53 @@ This isn’t just clothing—this is UNREAL.
 
 <!-- ================= ABOUT ================= -->
 
-<section class="about section" id="about">
+<section
+    class="about section"
+    id="about"
+>
+
 
     <div class="about-title">
 
+
         <h2>
-            BE<br>
+
+            MAKE<br>
+            IT<br>
             UNREAL.
+
         </h2>
 
+
     </div>
+
 
 
     <div class="about-text">
 
-        <p>
-           “Unreal” isn’t just a style — it’s a mindset. It’s about breaking boundaries, defying limits, and daring to be different. In a world that tries to define what’s real, we choose to create our own reality. Every stitch, every design, every detail is made to remind you that your dreams, your vision, and your energy are beyond ordinary. Wear it loud. Live it bold. Be Unreal..
-        </p>
 
         <p>
-            This is Collection 001.
-            The beginning of something different.
+
+            UNREAL exists for people who
+            make their own rules.
+
+            We believe clothing should feel
+            like identity, not a uniform.
+
         </p>
+
+
+        <p>
+
+            This is Collection 001.
+
+            The beginning of something different.
+
+        </p>
+
 
     </div>
+
 
 </section>
 
@@ -151,101 +259,44 @@ This isn’t just clothing—this is UNREAL.
 
 <section class="newsletter">
 
+
     <h2>
+
         JOIN THE UNREAL MOVEMENT.
+
     </h2>
 
+
     <p>
+
         Get first access to new drops.
+
     </p>
 
-   <section class="join-section" id="join">
-    <div class="join-container">
-        <p class="join-label">THE MOVEMENT</p>
-        <h2>BE PART OF<br><span>UNREAL.</span></h2>
-        <p class="join-text">
-            This isn't just a brand. It's a mindset.
-            Get updates, drops, events and everything UNREAL.
-        </p>
-        <form id="unrealSignup">
-            <input
-                type="text"
-                name="name"
-                placeholder="YOUR NAME"
-                required
-            >
-            <input
-                type="email"
-                name="email"
-                placeholder="YOUR EMAIL"
-                required
-            >
-            <!-- Spam protection -->
-            <input
-                type="text"
-                name="_honey"
-                style="display:none"
-                tabindex="-1"
-                autocomplete="off"
-            >
-            <input
-                type="hidden"
-                name="_subject"
-                value="New UNREAL Movement Signup"
-            >
-            <button type="submit" id="joinButton">
-                JOIN THE MOVEMENT →
-            </button>
-        </form>
-        <div id="signupMessage" class="signup-message"></div>
-    </div>
-</section>
-<script>
-const signupForm = document.getElementById("unrealSignup");
-const signupButton = document.getElementById("joinButton");
-const signupMessage = document.getElementById("signupMessage");
-signupForm.addEventListener("submit", async function(event) {
-    event.preventDefault();
-    signupButton.disabled = true;
-    signupButton.innerText = "JOINING...";
-    const formData = new FormData(signupForm);
-    const data = {};
-    formData.forEach((value, key) => {
-        data[key] = value;
-    });
-    try {
-        const response = await fetch(
-            "https://formsubmit.co/ajax/hello.beunreal@gmail.com",
-            {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Accept": "application/json"
-                },
-                body: JSON.stringify(data)
-            }
-        );
-        const result = await response.json();
-        if (result.success) {
-            signupForm.reset();
-            signupMessage.innerHTML = `
-                <strong>YOU'RE IN.</strong><br>
-                Welcome to UNREAL.
-            `;
-            signupButton.innerText = "WELCOME TO UNREAL";
-        } else {
-            throw new Error("Submission failed");
-        }
-    } catch (error) {
-        signupMessage.innerHTML = `
-            Something went wrong.<br>
-            Please try again.
-        `;
-        signupButton.disabled = false;
-        signupButton.innerText = "JOIN THE MOVEMENT →";
-    }
-});
-</script>
+
+    <form
+        onsubmit="subscribe(event)"
+    >
+
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Your email address"
+            required
+        >
+
+
+        <button type="submit">
+
+            JOIN
+
+        </button>
+
+
+    </form>
+
+
 </section>
 
 
@@ -254,35 +305,56 @@ signupForm.addEventListener("submit", async function(event) {
 
 <footer id="contact">
 
+
     <div class="footer-top">
 
+
         <div class="footer-logo">
+
             UNREAL
+
         </div>
+
 
 
         <div class="footer-links">
 
+
             <a href="#">
+
                 Instagram
+
             </a>
+
 
             <a href="#">
+
                 TikTok
+
             </a>
 
-            <a href="mailto:hello@unrealbrand.com">
+
+            <a href="mailto:hello.beunreal@gmail.com">
+
                 Email
+
             </a>
+
 
         </div>
+
 
     </div>
 
 
+
     <p class="copyright">
-        © 2026 UNREAL. ALL RIGHTS RESERVED.
+
+        © 2026 UNREAL.
+        ALL RIGHTS RESERVED.
+
     </p>
+
 
 </footer>
 
@@ -290,62 +362,108 @@ signupForm.addEventListener("submit", async function(event) {
 
 <!-- ================= CART ================= -->
 
-<div class="cart-overlay" id="cart-overlay">
+<div
+    class="cart-overlay"
+    id="cart-overlay"
+>
+
 
     <div class="cart">
 
-        <button class="close-cart" onclick="closeCart()">
+
+        <button
+            class="close-cart"
+            onclick="closeCart()"
+        >
+
             ×
+
         </button>
 
+
         <h2>
+
             YOUR CART
+
         </h2>
+
+
 
         <div id="cart-items">
 
+
             <p class="empty-cart">
+
                 Your cart is empty.
+
             </p>
 
+
         </div>
+
 
 
         <div class="cart-total">
 
+
             <span>
+
                 TOTAL
+
             </span>
 
+
             <strong id="cart-total">
+
                 GHS 0.00
+
             </strong>
 
+
         </div>
+
 
 
         <button
             class="checkout whatsapp"
             onclick="orderWhatsApp()"
         >
+
             ORDER VIA WHATSAPP
+
         </button>
+
 
 
         <button
             class="checkout payment"
             onclick="startPayment()"
         >
+
             PAY ONLINE
+
         </button>
 
+
     </div>
+
 
 </div>
 
 
 
+<!-- ================= PAYSTACK ================= -->
+
+<script
+    src="https://js.paystack.co/v2/inline.js"
+></script>
+
+
+<!-- ================= UNREAL JAVASCRIPT ================= -->
+
 <script src="script.js"></script>
 
+
 </body>
+
 </html>
