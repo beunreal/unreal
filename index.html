@@ -1,463 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>UNREAL — BE UNREAL.</title>
-
-    <meta
-        name="description"
-        content="UNREAL — independent Ghanaian streetwear. Be Unreal."
-    >
-
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
-
+<meta charset="UTF-8">
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+<title>UNREAL — BE UNREAL.</title>
+<meta
+    name="description"
+    content="UNREAL — independent Ghanaian streetwear. Be Unreal."
+>
+<link
+    rel="stylesheet"
+    href="style.css"
+>
 </head>
-
-
 <body>
-
-
-<!-- ================= HEADER ================= -->
-
+<!-- =====================================================
+     HEADER
+===================================================== -->
 <header class="header">
-
-    <a href="#" class="logo">
-        UNREAL
+<a
+    href="#"
+    class="logo"
+>
+    UNREAL
+</a>
+<nav
+    class="nav"
+    id="main-nav"
+>
+    <a href="#shop">
+        SHOP
     </a>
-
-
-    <nav class="nav">
-
-        <a href="#shop">
-            SHOP
-        </a>
-
-        <a href="#about">
-            ABOUT
-        </a>
-
-        <a href="#contact">
-            CONTACT
-        </a>
-
-
-        <button
-            onclick="openCart()"
-            class="cart-button"
-        >
-
-            CART
-            (<span id="cart-count">0</span>)
-
-        </button>
-
-    </nav>
-
-
+    <a href="#about">
+        ABOUT
+    </a>
+    <a href="#contact">
+        CONTACT
+    </a>
     <button
-        class="mobile-menu"
-        onclick="toggleMenu()"
+        class="cart-button"
+        onclick="openCart()"
     >
-
-        ☰
-
+        CART
+        (<span id="cart-count">0</span>)
     </button>
-
+</nav>
+<button
+    class="mobile-menu"
+    id="mobile-menu-button"
+    onclick="toggleMenu()"
+    aria-label="Open menu"
+    aria-expanded="false"
+>
+    ☰
+</button>
 </header>
-
-
-
-<!-- ================= HERO ================= -->
-
+<!-- =====================================================
+     HERO
+===================================================== -->
+<main>
 <section class="hero">
-
-
-    <div class="hero-text">
-
-
-        <p class="small-title">
-
-            COLLECTION 001
-
-        </p>
-
-
-        <h1>
-
-            BE<br>
-            UNREAL.
-
-        </h1>
-
-
-        <p class="hero-description">
-        Step into a world where style breaks every rule. Bold designs. Sharp details. Confidence that can’t be copied.
-This isn’t just clothing—this is UNREAL.
-
-
-        </p>
-
-
-        <a
-            href="#shop"
-            class="main-button"
-        >
-
-            SHOP THE DROP →
-
-        </a>
-
-
+<div class="hero-content">
+    <span class="collection-tag">
+        COLLECTION 001
+    </span>
+    <h1>
+        BE<br>
+        UNREAL.
+    </h1>
+    <p>
+       “Unreal” isn’t just a style — it’s a mindset. It’s about breaking boundaries, defying limits, and daring to be different. In a world that tries to define what’s real, we choose to create our own reality. Every stitch, every design, every detail is made to remind you that your dreams, your vision, and your energy are beyond ordinary. Wear it loud. Live it bold. Be Unreal.
+    </p>
+    <a
+        href="#shop"
+        class="main-button"
+    >
+        SHOP THE DROP →
+    </a>
+</div>
+<div class="hero-visual">
+    <span class="hero-number">
+        001
+    </span>
+    <div class="hero-shirt">
+        UNREAL
     </div>
-
-
-
-    <div class="hero-image">
-
-        <div class="shirt">
-
-            <span>
-                UNREAL
-            </span>
-
-        </div>
-
-    </div>
-
-
+</div>
 </section>
-
-
-
-<!-- ================= SHOP ================= -->
-
+<!-- =====================================================
+     SHOP
+===================================================== -->
 <section
     class="shop section"
     id="shop"
 >
-
-
-    <div class="section-heading">
-
-
-        <h2>
-
-            THE DROP
-
-        </h2>
-
-
-        <p>
-
+<div class="section-heading">
+    <div>
+        <span class="eyebrow">
             COLLECTION 001
-
-        </p>
-
-
+        </span>
+        <h2>
+            THE DROP
+        </h2>
     </div>
-
-
-
-    <div
-        class="products"
-        id="products-container"
-    >
-
-        <!-- Products loaded by JavaScript -->
-
-    </div>
-
-
+    <p>
+        WEAR.
+        THE IMPOSSIBLE.
+    </p>
+</div>
+<div
+    class="products"
+    id="products-container"
+>
+    <!-- Products appear here -->
+</div>
 </section>
-
-
-
-<!-- ================= STATEMENT ================= -->
-
+<!-- =====================================================
+     STATEMENT
+===================================================== -->
 <section class="statement">
-
-
-    <h2>
-
-       Wear the impossible.
-
-    </h2>
-
-
+<span>
+    UNREAL
+</span>
+<h2>
+    YOU DON'T NEED<br>
+    TO FIT IN TO<br>
+    STAND OUT.
+</h2>
 </section>
-
-
-
-<!-- ================= ABOUT ================= -->
-
+<!-- =====================================================
+     ABOUT
+===================================================== -->
 <section
     class="about section"
     id="about"
 >
-
-
-    <div class="about-title">
-
-
-        <h2>
-
-            BE<br>
-            
-            UNREAL.
-
-        </h2>
-
-
-    </div>
-
-
-
-    <div class="about-text">
-
-
-        <p>
-
-            “Unreal” isn’t just a style — it’s a mindset. It’s about breaking boundaries, defying limits, and daring to be different. In a world that tries to define what’s real, we choose to create our own reality. Every stitch, every design, every detail is made to remind you that your dreams, your vision, and your energy are beyond ordinary. Wear it loud. Live it bold. Be Unreal.
-
-        </p>
-
-
-        <p>
-
-            This is Collection 001.
-
-            The beginning of something different.
-
-        </p>
-
-
-    </div>
-
-
-</section>
-
-
-
-<!-- ================= NEWSLETTER ================= -->
-
-<section class="newsletter">
-
-
+<div class="about-title">
+    <span class="eyebrow">
+        ABOUT US
+    </span>
     <h2>
-
-        JOIN THE UNREAL MOVEMENT.
-
+        MAKE<br>
+        IT<br>
+        UNREAL.
     </h2>
-
-
+</div>
+<div class="about-text">
     <p>
-
-        Get first access to new drops.
-
+        Step into a world where style breaks every rule. Bold designs. Sharp details. Confidence that can’t be copied.
+This isn’t just clothing—this is UNREAL.
     </p>
-
-
-    <form
-        onsubmit="subscribe(event)"
-    >
-
-
-        <input
-            type="email"
-            id="email"
-            placeholder="Your email address"
-            required
-        >
-
-
-        <button type="submit">
-
-            JOIN
-
-        </button>
-
-
-    </form>
-
-
+    <p>
+        Collection 001 is the beginning.
+        Six pieces.
+        One idea.
+        Be different.
+        Be yourself.
+        Be UNREAL.
+    </p>
+</div>
 </section>
-
-
-
-<!-- ================= CONTACT ================= -->
-
+<!-- =====================================================
+     NEWSLETTER
+===================================================== -->
+<section class="newsletter">
+<span class="eyebrow">
+    STAY CONNECTED
+</span>
+<h2>
+    JOIN THE UNREAL MOVEMENT.
+</h2>
+<p>
+    Get first access to new drops,
+    releases and UNREAL news.
+</p>
+<form
+    onsubmit="subscribe(event)"
+>
+    <input
+        type="email"
+        id="email"
+        placeholder="Your email address"
+        autocomplete="email"
+        required
+    >
+    <button type="submit">
+        JOIN
+    </button>
+</form>
+<p
+    class="form-message"
+    id="form-message"
+></p>
+</section>
+</main>
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 <footer id="contact">
-
-
-    <div class="footer-top">
-
-
+<div class="footer-top">
+    <div>
         <div class="footer-logo">
-
             UNREAL
-
         </div>
-
-
-
-        <div class="footer-links">
-
-
-            <a href="#">
-
-                Instagram
-
-            </a>
-
-
-            <a href="#">
-
-                TikTok
-
-            </a>
-
-
-            <a href="mailto:hello.beunreal@gmail.com">
-
-                Email
-
-            </a>
-
-
-        </div>
-
-
+        <p class="footer-tagline">
+            BE UNREAL.
+        </p>
     </div>
-
-
-
-    <p class="copyright">
-
-        © 2026 UNREAL.
-        ALL RIGHTS RESERVED.
-
-    </p>
-
-
+    <div class="footer-links">
+        <a href="#">
+            Instagram
+        </a>
+        <a href="#">
+            TikTok
+        </a>
+        <a href="mailto:hello.beunreal@gmail.com">
+            Email
+        </a>
+    </div>
+</div>
+<p class="copyright">
+    © 2026 UNREAL.
+    ALL RIGHTS RESERVED.
+</p>
 </footer>
-
-
-
-<!-- ================= CART ================= -->
-
+<!-- =====================================================
+     CART
+===================================================== -->
 <div
     class="cart-overlay"
     id="cart-overlay"
+    onclick="closeCartFromOverlay(event)"
 >
-
-
-    <div class="cart">
-
-
-        <button
-            class="close-cart"
-            onclick="closeCart()"
-        >
-
-            ×
-
-        </button>
-
-
-        <h2>
-
-            YOUR CART
-
-        </h2>
-
-
-
-        <div id="cart-items">
-
-
-            <p class="empty-cart">
-
-                Your cart is empty.
-
-            </p>
-
-
+<aside class="cart">
+    <button
+        class="close-cart"
+        onclick="closeCart()"
+        aria-label="Close cart"
+    >
+        ×
+    </button>
+    <span class="eyebrow">
+        UNREAL SHOP
+    </span>
+    <h2>
+        YOUR CART
+    </h2>
+    <div id="cart-items">
+        <div class="empty-cart">
+            <h3>
+                YOUR CART IS EMPTY.
+            </h3>
         </div>
-
-
-
-        <div class="cart-total">
-
-
-            <span>
-
-                TOTAL
-
-            </span>
-
-
-            <strong id="cart-total">
-
-                GHS 0.00
-
-            </strong>
-
-
-        </div>
-
-
-
-        <button
-            class="checkout whatsapp"
-            onclick="orderWhatsApp()"
-        >
-
-            ORDER VIA WHATSAPP
-
-        </button>
-
-
-
-        <button
-            class="checkout payment"
-            onclick="startPayment()"
-        >
-
-            PAY ONLINE
-
-        </button>
-
-
     </div>
-
-
+    <div class="cart-total">
+        <span>
+            TOTAL
+        </span>
+        <strong id="cart-total">
+            GHS 0.00
+        </strong>
+    </div>
+    <button
+        class="checkout whatsapp"
+        onclick="orderWhatsApp()"
+    >
+        ORDER VIA WHATSAPP
+    </button>
+    <button
+        class="checkout payment"
+        onclick="startPayment()"
+    >
+        PAY ONLINE
+    </button>
+</aside>
 </div>
-
-
-
-<!-- ================= PAYSTACK ================= -->
-
+<!-- =====================================================
+     TOAST
+===================================================== -->
+<div
+    class="toast"
+    id="toast"
+>
+<span id="toast-message">
+    Added to cart.
+</span>
+</div>
+<!-- =====================================================
+     PAYSTACK
+===================================================== -->
 <script
     src="https://js.paystack.co/v2/inline.js"
 ></script>
-
-
-<!-- ================= UNREAL JAVASCRIPT ================= -->
-
+<!-- =====================================================
+     UNREAL JAVASCRIPT
+===================================================== -->
 <script src="script.js"></script>
-
-
 </body>
-
 </html>
